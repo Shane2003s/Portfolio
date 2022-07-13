@@ -1,0 +1,435 @@
+html{
+    scroll-behavior: smooth;   /*Important*/
+}
+   /*Important*/
+body{
+margin:0px;
+padding: 0px;
+box-sizing: border-box;
+}
+.maincontainer{
+    background-color:white;
+    color:black;
+}
+nav{
+    max-height:10vh ;
+    display:flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.logo{
+    letter-spacing: 3px;
+    color:white;
+    font-weight: bold;
+    font-size:18px;
+}
+
+.hover{
+    color:white;
+}
+/*tile change to name.*/
+.logo_hover:hover .logo{
+   display: none; }   /*Important*/
+   /*Important*/   /*Important*/   /*Important*/   /*Important*/   /*Important*/
+.logo_hover:hover .hover:before{
+   content: "Saw Khay Nay";
+    font-weight: bold;    
+    color:rgb(66, 126, 66);
+    user-select: none;
+    
+}
+
+
+.navlinks{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    letter-spacing: 2px;   /*Important*/
+    width:30%;
+    color:white;
+    font-weight: bold;
+}
+li{
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    color:rgb(66, 126, 66);
+}
+
+.burger div{
+    width:20px;
+    height: 2px;
+    background-color: white;
+    margin: 4px;
+    display: none;
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:100%;
+}
+.left{
+    width:50%;
+    user-select: none;
+}
+section{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.do{
+    text-align: center;
+}
+.point{
+    color:blue;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+}
+.point:hover{
+    cursor: pointer;
+    text-decoration:underline;   /*Important*/
+}
+nav{
+    top:0;
+    position:sticky;
+}
+.card{
+    width:90%;
+    text-align: center;
+    background-color: rgb(230, 201, 201);
+    margin:auto;
+    border-radius: 10px;
+    height:400px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.input{
+    background-color:rgb(202, 180, 180);
+    border:none;
+    border-radius: 5px;
+    height: 50px;
+    color:rgb(48, 34, 34);
+    text-align: center;
+    margin:10px;
+    width:55%;
+}
+.submit{
+    color:white;
+    background-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.footer_container{
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    margin-top: 10px;
+}
+.sign{
+    border:2px solid white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:150px;
+    text-align: center;
+    height:40px;
+    margin-top: 20px;
+    color:white;
+    background-color: black;
+    cursor:pointer;
+}
+.icon{
+    background-color:white;
+    width: 25px;
+    height:25px;
+    border-radius: 15px;
+    margin:15px 10px;
+    border:none;
+    cursor: pointer;
+}
+.c{
+    margin:10px;
+    font-size: small;
+    font-weight: bold;
+}
+@media(max-width:1000px){
+    .navlinks{
+        width:50%;
+        letter-spacing: normal;   /*Important*/
+    }
+    .c{
+    margin:10px;
+    font-size: 10px;
+    font-weight: bold;
+}   
+}
+@media(max-width:500px){
+    body{
+       overflow-x: hidden;
+    } 
+    nav{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;  
+        top:0;
+        position:sticky;
+    }
+    .navlinks{
+        display:flex;
+        position:absolute;   /*Important*/
+        padding-top:5px;
+        top:6.4px;
+        right:0;
+        background-color: black;
+        height:100vh;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);   /*Important*/
+        transition:0.6s ease-in;   /*Important*/
+    }
+
+       /*Important*/
+    .nav-active{
+        transform: translateX(0%);
+    }
+    .burger{
+        cursor:pointer;
+    }
+    .burger div{
+        display:block;
+        
+    }
+    /*Important*/   /*Important*/
+    .toggle .line1{
+        transform:rotate(-50deg)translate(-5px,5px);
+    }
+    .toggle .line2{
+        opacity: 0;
+    }
+    .toggle .line3{
+        transform:rotate(50deg)translate(-5px,-5px);
+    }
+    p{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight:200;
+        font-style: oblique;
+    }
+    .c{
+    margin:10px;
+    font-style: normal;
+    font-size: 10px;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+<!DOCTYPE html>
+<head>
+<title>Resposive Navbar</title>
+<link rel="stylesheet" href="index.css"/>    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: #eaeaea;
+    top:0;
+    position:sticky;
+}
+.container{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    max-width:1200px;
+    margin:0 auto;
+}
+li{
+    display:inline-block;
+    padding: 0 1.25rem;
+}
+li a{
+    color:black;
+    text-decoration: none;
+}
+.nav-toggle{
+    display: none;
+    position: absolute;
+    top:1.8rem;
+    right:1rem;
+}
+.appear{
+    height:100vh;
+}
+.hidden{
+    display:none;
+}
+@media(max-width:728px){
+    .container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    li{
+        display:block;
+        text-align: center;
+        padding:15px 0;
+    }
+    nav{
+        width:100%;
+        height:0;
+        overflow: hidden;
+        transition: 0.2s ease-in-out;
+    }
+    li a{
+        font-size:20px;
+    }
+
+    .nav-toggle{
+        display:block;
+    }
+    .open {
+    height: 100vh;
+  }
+  
+  .hidden {
+    display: none;
+  }
+}
+
+</style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div>
+            <h2>LOGO</h2>
+            <div class="nav-toggle" id="navToggle">
+              
+                <img id="navClosed" class="navIcon" src="https://www.richardmiddleton.me/wp-content/themes/richardcodes/assets/img/hamburger.svg" alt="hamburger menu">
+                <img id="navOpen" class="navIcon hidden" src="https://www.richardmiddleton.me/wp-content/themes/richardcodes/assets/img/close.svg" alt="close hamburger">
+              </div>
+        </div>
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#" class="nav-link">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">FORUM</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+    </div>
+</header>
+<div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum optio quo magni explicabo quasi, quam est numquam quibusdam fugit aliquid sit laborum esse, eos facilis ex soluta architecto similique accusantium!
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi eius illum quos? Totam sequi nisi iusto dolores reprehenderit magni sapiente blanditiis illo, ad eveniet, omnis, repellendus earum. Libero, eveniet maiores!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi cupiditate praesentium perspiciatis laborum dolore voluptatibus magni hic quasi iusto vero, et qui obcaecati eaque tenetur molestias quae quos fuga quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ullam praesentium nulla deleniti, obcaecati nam architecto nihil blanditiis quaerat, placeat voluptatibus. Expedita eos explicabo ipsa porro iusto velit unde ex.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum optio quo magni explicabo quasi, quam est numquam quibusdam fugit aliquid sit laborum esse, eos facilis ex soluta architecto similique accusantium!
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi eius illum quos? Totam sequi nisi iusto dolores reprehenderit magni sapiente blanditiis illo, ad eveniet, omnis, repellendus earum. Libero, eveniet maiores!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi cupiditate praesentium perspiciatis laborum dolore voluptatibus magni hic quasi iusto vero, et qui obcaecati eaque tenetur molestias quae quos fuga quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ullam praesentium nulla deleniti, obcaecati nam architecto nihil blanditiis quaerat, placeat voluptatibus. Expedita eos explicabo ipsa porro iusto velit unde ex.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum optio quo magni explicabo quasi, quam est numquam quibusdam fugit aliquid sit laborum esse, eos facilis ex soluta architecto similique accusantium!
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi eius illum quos? Totam sequi nisi iusto dolores reprehenderit magni sapiente blanditiis illo, ad eveniet, omnis, repellendus earum. Libero, eveniet maiores!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi cupiditate praesentium perspiciatis laborum dolore voluptatibus magni hic quasi iusto vero, et qui obcaecati eaque tenetur molestias quae quos fuga quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ullam praesentium nulla deleniti, obcaecati nam architecto nihil blanditiis quaerat, placeat voluptatibus. Expedita eos explicabo ipsa porro iusto velit unde ex.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum optio quo magni explicabo quasi, quam est numquam quibusdam fugit aliquid sit laborum esse, eos facilis ex soluta architecto similique accusantium!
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi eius illum quos? Totam sequi nisi iusto dolores reprehenderit magni sapiente blanditiis illo, ad eveniet, omnis, repellendus earum. Libero, eveniet maiores!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi cupiditate praesentium perspiciatis laborum dolore voluptatibus magni hic quasi iusto vero, et qui obcaecati eaque tenetur molestias quae quos fuga quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ullam praesentium nulla deleniti, obcaecati nam architecto nihil blanditiis quaerat, placeat voluptatibus. Expedita eos explicabo ipsa porro iusto velit unde ex.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum optio quo magni explicabo quasi, quam est numquam quibusdam fugit aliquid sit laborum esse, eos facilis ex soluta architecto similique accusantium!
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi eius illum quos? Totam sequi nisi iusto dolores reprehenderit magni sapiente blanditiis illo, ad eveniet, omnis, repellendus earum. Libero, eveniet maiores!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi cupiditate praesentium perspiciatis laborum dolore voluptatibus magni hic quasi iusto vero, et qui obcaecati eaque tenetur molestias quae quos fuga quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ullam praesentium nulla deleniti, obcaecati nam architecto nihil blanditiis quaerat, placeat voluptatibus. Expedita eos explicabo ipsa porro iusto velit unde ex.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum optio quo magni explicabo quasi, quam est numquam quibusdam fugit aliquid sit laborum esse, eos facilis ex soluta architecto similique accusantium!
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi eius illum quos? Totam sequi nisi iusto dolores reprehenderit magni sapiente blanditiis illo, ad eveniet, omnis, repellendus earum. Libero, eveniet maiores!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi cupiditate praesentium perspiciatis laborum dolore voluptatibus magni hic quasi iusto vero, et qui obcaecati eaque tenetur molestias quae quos fuga quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ullam praesentium nulla deleniti, obcaecati nam architecto nihil blanditiis quaerat, placeat voluptatibus. Expedita eos explicabo ipsa porro iusto velit unde ex.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum optio quo magni explicabo quasi, quam est numquam quibusdam fugit aliquid sit laborum esse, eos facilis ex soluta architecto similique accusantium!
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi eius illum quos? Totam sequi nisi iusto dolores reprehenderit magni sapiente blanditiis illo, ad eveniet, omnis, repellendus earum. Libero, eveniet maiores!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi cupiditate praesentium perspiciatis laborum dolore voluptatibus magni hic quasi iusto vero, et qui obcaecati eaque tenetur molestias quae quos fuga quam.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ullam praesentium nulla deleniti, obcaecati nam architecto nihil blanditiis quaerat, placeat voluptatibus. Expedita eos explicabo ipsa porro iusto velit unde ex.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum optio quo magni explicabo quasi, quam est numquam quibusdam fugit aliquid sit laborum esse, eos facilis ex soluta architecto similique accusantium!
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi eius illum quos? Totam sequi nisi iusto dolores reprehenderit magni sapiente blanditiis illo, ad eveniet, omnis, repellendus earum. Libero, eveniet maiores!
+</div>
+<script src="index.js"></script>
+</body>
+</html>
+
+
+*/
